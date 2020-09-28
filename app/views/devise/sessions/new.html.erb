@@ -1,14 +1,15 @@
 <% content_for :devise_form do %>
-  <h2 class="pt-4 mb-8 text-4xl font-bold heading">Log in</h2>
+  <div class="font">
+  <h2 class="pt-4 mb-8 text-4xl font-bold heading">เข้าสู่ระบบ</h2>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
     <div class="input-group">
-      <%= f.label :email, class:"label" %>
+      <%= f.label :อีเมลล์, class:"label" %>
       <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "input" %>
     </div>
 
     <div class="input-group">
-      <%= f.label :password, class:"label" %>
+      <%= f.label :รหัสผ่าน, class:"label" %>
       <%= f.password_field :password, autocomplete: "current-password", class: "input" %>
     </div>
 
@@ -20,7 +21,7 @@
     </div>
 
     <div class="input-group">
-      <%= f.submit "Log in", class: "btn btn-default" %>
+      <%= f.submit "เข้าสู่ระบบ", class: "btn btn-default" %>
     </div>
 
   <% end %>
@@ -28,6 +29,8 @@
   <hr class="mt-6 border" />
 
   <%= render "devise/shared/links" %>
+
 <% end %>
 
 <%= render "devise/shared/form_wrap" %>
+</div>

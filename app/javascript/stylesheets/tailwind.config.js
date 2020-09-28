@@ -247,6 +247,7 @@ module.exports = {
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+      ban: ['Bai Jamjuree'],
     },
     fontSize: {
       xs: '0.75rem',
